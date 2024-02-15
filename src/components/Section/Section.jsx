@@ -10,6 +10,9 @@ function Section({ title, data, type }) {
   const handletoggle = () => {
     setCarouselToggle((prevState) => !prevState);
   };
+
+  console.log(data);
+
   return (
     <div>
       <div className={styles.header}>

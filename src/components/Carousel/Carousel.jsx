@@ -11,6 +11,7 @@ const Controls = ({ data }) => {
   useEffect(() => {
     swiper.slideTo(0, 1);
   }, [data]);
+  return <></>;
 };
 
 function Carousel({ data, renderComponent }) {
@@ -27,9 +28,10 @@ function Carousel({ data, renderComponent }) {
         <Controls data={data} />
         <CarouselLeftNavigation />
         <CarouselRightNavigation />
-        {data.map((ele) => {
-          <SwiperSlide>{renderComponent(ele)}</SwiperSlide>;
-        })}
+
+        {data.map((ele) => (
+          <SwiperSlide>{renderComponent(ele)}</SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
