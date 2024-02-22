@@ -20,13 +20,13 @@ function App() {
     generateData("songs", fetchSongs);
   }, []);
 
-  const { topAlbums = [], newAlbums = [] } = data;
+  const { topAlbums = [], newAlbums = [], songs = [] } = data;
 
   return (
     <>
       <StyledEngineProvider>
         <Navbar />
-        <Outlet context={{ data: { topAlbums, newAlbums } }} />
+        <Outlet context={{ data: { topAlbums, newAlbums, songs } }} />
       </StyledEngineProvider>
     </>
   );

@@ -6,6 +6,8 @@
 
 .header {
   display: flex;
+  padding: 10px;
+
   justify-content: space-between;
   align-items: baseline;
 }
@@ -17,4 +19,8 @@
 
 .cardWrapper {
   margin-top: 18px;
+}
+
+.filterWrapper {
+  margin-top: 15px;
 }
