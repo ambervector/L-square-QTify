@@ -12,8 +12,8 @@ const Form = ({ open, handleClose }) => {
       onClose={handleClose}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
+      sx={{ backgroundColor: "var(--color-white)", padding: "30px" }}
     >
-      {/* className={styles.form} */}
       <Box
         component="form"
         noValidate
@@ -58,10 +58,6 @@ const Form = ({ open, handleClose }) => {
             size="small"
             sx={{
               "& fieldset": { border: "1px solid var(--color-primary)" },
-              "&:hover": {
-                border: "1px solid var(--color-primary)",
-                outline: "none",
-              },
             }}
           />
         </div>
@@ -70,10 +66,6 @@ const Form = ({ open, handleClose }) => {
           className={styles.feedbackSubmitButton}
           onClick={(e) => {
             e.preventDefault();
-          }}
-          sx={{
-            backgroundColor: "var(--color-primary) !important",
-            color: "var(--color-white) !important",
           }}
         >
           Submit Feedback
