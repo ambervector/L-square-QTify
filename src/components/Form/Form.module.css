@@ -1,0 +1,53 @@
+.modal {
+  display: absolute;
+  top: 50%;
+  width: 400px;
+  height: 90vh;
+  border-radius: 10px;
+  /* border: 1px solid var(--color-primary); */
+  background-color: rgb(255, 255, 255) !important;
+  margin: auto;
+}
+
+.form {
+  padding: 4px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.inputFieldContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputField {
+  width: 100%;
+  /* height: 30px !important; */
+  /* border: 1px solid var(--color-primary) !important; */
+  border-radius: 5px;
+}
+/* 
+.inputField input {
+  border: none !important;
+} */
+#biggerTextArea {
+  height: 136px;
+}
+
+.feedbackSubmitButton {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 13px 14px 13px 14px;
+  border: none;
+  border-radius: 12px;
+  width: 192px;
+  cursor: pointer;
+}

@@ -31,7 +31,7 @@ function Section({ title, data, filterSource, type }) {
       : card
   );
   return (
-    <div>
+    <div className={styles.center}>
       <div className={styles.header}>
         <h3>{title}</h3>
         <h4 className={styles.toggleTxt} onClick={handletoggle}>
